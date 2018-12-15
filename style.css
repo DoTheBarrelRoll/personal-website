@@ -1,0 +1,28 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.jumbotron {
+  position: relative;
+  text-align: center;
+  color: rgb(255,255,255);
+}
+
+.jumbotron::before {
+  content: "";
+
+  text-align: center;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url("img/cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(3px);
+}
+
+.jumbotron-inside {
+  /* This will make it stack on top of the ::before */
+  position: relative;
+
+}
